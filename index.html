@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7faff" />
+    <meta
+      name="description"
+      content="徐洁煦的个人网站：机器人与自主系统、多智能体强化学习、具身控制与整车级硬件研发。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="徐洁煦 · Jiexu Xu" />
+    <meta
+      property="og:description"
+      content="连接整车级硬件经验与多智能体智能，探索安全、可靠的具身协同系统。"
+    />
+    <meta property="og:image" content="assets/jiexu-portrait.jpg" />
+    <title>徐洁煦 · Jiexu Xu</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="ambient ambient--blue" aria-hidden="true"></div>
+    <div class="ambient ambient--pink" aria-hidden="true"></div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Back to top">
+          <span class="brand__mark" aria-hidden="true">JX</span>
+          <span class="brand__name">Jiexu Xu</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+          <a href="#about" data-i18n="nav.about">关于</a>
+          <a href="#work" data-i18n="nav.work">项目</a>
+          <a href="#experience" data-i18n="nav.experience">经历</a>
+          <a href="#honors" data-i18n="nav.honors">荣誉</a>
+          <a href="#contact" data-i18n="nav.contact">联系</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="nav-button nav-button--text" id="langToggle" type="button" aria-label="Switch language">
+            EN
+          </button>
+          <button class="nav-button" id="themeToggle" type="button" aria-label="Switch color theme">
+            <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 15.5A9 9 0 0 1 8.5 3 9.5 9.5 0 1 0 21 15.5Z" />
+            </svg>
+            <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+            </svg>
+          </button>
+          <button class="nav-button nav-menu" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="heroName">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">机器人 · 多智能体智能</span></p>
+          <h1 id="heroName" data-i18n="hero.name">徐洁煦</h1>
+          <p class="hero__role" data-i18n="hero.role">机器人与自主系统硕士生｜多智能体强化学习与具身控制</p>
+          <p class="hero__lead" data-i18n="hero.lead">
+            连接整车级硬件经验与多智能体智能，探索安全、可靠的具身协同系统。
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="mailto:jxu130@connect.hkust-gz.edu.cn">
+              <span data-i18n="actions.email">邮件联系</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-5 14-3-6-6-1Z" /></svg>
+            </a>
+            <a class="button button--secondary" href="https://github.com/jiexu1210000-glitch" target="_blank" rel="noopener noreferrer">
+              <span>GitHub</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16 16 8m-6-1h7v7" /></svg>
+            </a>
+          </div>
+          <div class="hero__meta">
+            <span data-i18n="hero.metaA">整车研发经验</span>
+            <span aria-hidden="true">•</span>
+            <span data-i18n="hero.metaB">安全关键机器人研究</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-label="Portrait of Jiexu Xu">
+          <div class="portrait-orbit portrait-orbit--one" aria-hidden="true"></div>
+          <div class="portrait-orbit portrait-orbit--two" aria-hidden="true"></div>
+          <div class="portrait-card">
+            <img src="assets/jiexu-portrait.jpg" alt="徐洁煦个人照片" />
+            <div class="portrait-card__caption">
+              <span class="portrait-card__label" data-i18n="hero.portraitLabel">研究与工程</span>
+              <strong>Robotics × Intelligence</strong>
+            </div>
+          </div>
+          <div class="floating-chip floating-chip--top"><span class="chip-icon">ψ</span><span>MARL</span></div>
+          <div class="floating-chip floating-chip--bottom"><span class="chip-icon">∞</span><span>Embodied AI</span></div>
+        </div>
+      </section>
+
+      <section class="impact section-shell reveal" aria-label="Selected impact">
+        <div class="impact-grid" id="impactGrid"></div>
+      </section>
+
+      <section class="content-section section-shell" id="about">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker" data-i18n="about.kicker">关于我</p>
+            <h2 data-i18n="about.title">在智能决策与真实物理世界之间搭桥</h2>
+          </div>
+          <p data-i18n="about.body">
+            我拥有两年比亚迪整车研发经验，目前研究多智能体强化学习与具身控制。我的工作关注如何将高层智能决策转化为满足真实物理约束的安全控制。
+          </p>
+        </div>
+        <div class="expertise-grid reveal" id="expertiseGrid"></div>
+      </section>
+
+      <section class="content-section section-shell" id="work">
+        <div class="section-heading section-heading--compact reveal">
+          <div>
+            <p class="kicker" data-i18n="work.kicker">精选项目</p>
+            <h2 data-i18n="work.title">从算法到硬件的完整链路</h2>
+          </div>
+          <p data-i18n="work.lead">聚焦多体协同、灵巧操作与智能汽车硬件，把研究问题落到可验证的系统中。</p>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="research-band">
+        <div class="section-shell research-band__inner reveal">
+          <div class="publication-mark" aria-hidden="true">
+            <span>CDC</span><strong>26</strong>
+          </div>
+          <div class="publication-copy">
+            <p class="kicker" data-i18n="publication.kicker">学术成果 · 投稿中</p>
+            <h2>A Macro-Micro Bi-Level Control Architecture for UAV Swarms in Constrained Environments via Mean-Field Guidance and Asymmetric MAPPO</h2>
+            <p>Jiexu Xu, Ke Zeng, Zhenyu Gao, Huan Yu</p>
+            <div class="publication-meta">
+              <span data-i18n="publication.venue">Submitted to IEEE CDC 2026</span>
+              <span class="placeholder-pill" data-i18n="publication.link">论文链接待补充</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="experience">
+        <div class="section-heading section-heading--compact reveal">
+          <div>
+            <p class="kicker" data-i18n="experience.kicker">经历</p>
+            <h2 data-i18n="experience.title">工程经验与研究成长</h2>
+          </div>
+          <p data-i18n="experience.lead">从动力组件边界测试、整车结构研发，到安全关键的机器人控制研究。</p>
+        </div>
+
+        <div class="experience-layout">
+          <div class="timeline reveal" id="experienceTimeline"></div>
+          <article class="media-card reveal">
+            <div class="media-card__topline">
+              <span class="project-number">04</span>
+              <span class="project-label" data-i18n="media.label">公开成果片段</span>
+            </div>
+            <video
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="assets/byd-drone-platform-poster.webp"
+              aria-label="BYD vehicle-mounted drone platform project clip"
+            >
+              <source src="assets/byd-drone-platform.mp4" type="video/mp4" />
+            </video>
+            <div class="media-card__body">
+              <h3 data-i18n="media.title">车载无人机起降平台</h3>
+              <p data-i18n="media.body">该片段为可公开宣传内容，展示车载无人机平台的整车集成。我参与舱体结构设计、CAD 建模与功能样机验证。</p>
+              <span class="privacy-note" data-i18n="media.note">公开宣传内容 · 已优化为网页版本</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell education-honors" id="honors">
+        <div class="section-heading section-heading--compact reveal">
+          <div>
+            <p class="kicker" data-i18n="honors.kicker">教育与荣誉</p>
+            <h2 data-i18n="honors.title">持续学习，也持续交付</h2>
+          </div>
+          <p data-i18n="honors.lead">荣誉信息来自现有证书；原始扫描件不直接公开，以保护证件编号等个人信息。</p>
+        </div>
+        <div class="education-grid reveal" id="educationGrid"></div>
+        <div class="honors-grid reveal" id="honorsGrid"></div>
+        <details class="credentials-panel reveal">
+          <summary>
+            <span>
+              <strong data-i18n="honors.moreTitle">更多荣誉与资质</strong>
+              <small data-i18n="honors.moreLead">校级荣誉、语言成绩与资格证明</small>
+            </span>
+            <span class="details-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="credentials-grid" id="credentialsGrid"></div>
+        </details>
+      </section>
+
+      <section class="content-section section-shell" id="skills">
+        <div class="section-heading section-heading--compact reveal">
+          <div>
+            <p class="kicker" data-i18n="skills.kicker">技术栈</p>
+            <h2 data-i18n="skills.title">让算法、控制与结构设计协同工作</h2>
+          </div>
+          <p data-i18n="skills.lead">不使用主观百分比，以实际项目所采用的工具与方法进行归类。</p>
+        </div>
+        <div class="skills-grid reveal" id="skillsGrid"></div>
+      </section>
+
+      <section class="content-section section-shell" id="next">
+        <div class="section-heading section-heading--compact reveal">
+          <div>
+            <p class="kicker" data-i18n="next.kicker">待补充内容</p>
+            <h2 data-i18n="next.title">为下一版预留的位置</h2>
+          </div>
+          <p data-i18n="next.lead">这些卡片是明确占位，不代表尚未提供的事实。补充资料后即可直接替换。</p>
+        </div>
+        <div class="placeholder-grid reveal" id="placeholderGrid"></div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact">
+        <div class="contact-card reveal">
+          <div>
+            <p class="kicker" data-i18n="contact.kicker">联系</p>
+            <h2 data-i18n="contact.title">一起讨论安全、可靠的具身智能</h2>
+            <p data-i18n="contact.body">如果你对多智能体系统、具身智能或机器人安全控制感兴趣，欢迎通过邮件与我联系。</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button--primary" href="mailto:jxu130@connect.hkust-gz.edu.cn">
+              jxu130@connect.hkust-gz.edu.cn
+            </a>
+            <a class="button button--secondary" href="https://github.com/jiexu1210000-glitch" target="_blank" rel="noopener noreferrer">
+              github.com/jiexu1210000-glitch
+            </a>
+            <span class="placeholder-contact" data-i18n="contact.placeholder">LinkedIn / Google Scholar 待补充</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-shell">
+      <p>© <span id="currentYear"></span> Jiexu Xu</p>
+      <p data-i18n="footer">Designed around robotics, clarity, and a little pink-blue light.</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6" /></svg>
+    </button>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
